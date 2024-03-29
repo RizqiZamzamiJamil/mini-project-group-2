@@ -28,10 +28,19 @@
 
     <!-- JS -->
     <script src="../../assets/script.js"></script>
+    <style>
+        /* Buat gambar produk memiliki ukuran yang sama di dalam card */
+        .card-img-top {
+            width: 100%;
+            height: 200px; /* Atur tinggi gambar sesuai kebutuhan Anda */
+            object-fit: cover; /* Memastikan gambar tetap terlihat baik meskipun di-crop */
+        }
+    </style>
 
     <title>Product | Nyah Siok</title>
 </head>
 <body>
+    
     <!-- Navbar -->
     <div class="container-fluid" id="navbar">
         <div class="container">
@@ -77,8 +86,10 @@
                         <img src="../../assets/img/cakwe-ayamudang.jpg" class="card-img-top" alt="Cakwe Ayamudang">
                         <div class="card-body">
                             <h5 class="card-title">CAKWE AYAM UDANG</h5>
-                            <p class="card-text">Cakwe renyah, diisi dengan ayam dan udang segar, menciptakan kombinasi cita rasa yang menggoda.</p>
-                            <a href="#" class="btn">Rp, 20.000</a>
+                            <p class="card-text">
+                                Olahan Ayam, udang, telur, tepung yang di taruh diatas cakwe dan disajikan dengan cara digoreng.
+                            </p>
+                            <a href="#" class="btn">Rp. 20.000 - 35.000</a>
                         </div>
                     </div>
                 </div>
@@ -88,63 +99,76 @@
                         <img src="../../assets/img/galantine-ayam.jpg" class="card-img-top" alt="Galantine Ayam">
                         <div class="card-body">
                             <h5 class="card-title">GALANTINE AYAM</h5>
-                            <p class="card-text">Gulungan ayam dengan isian lezat, menawarkan pengalaman makan yang elegan dan memuaskan.</p>
-                            <a href="#" class="btn">Rp, 20.000</a>
+                            <p class="card-text">
+                                Olahan Ayam, telur, tepun, groti yang di haluskan dan di olah dengan di kukus
+                                dan dilengkapi dengan sayuran serta saus galantine.
+                            </p>
+                            <a href="#" class="btn">Rp. 25.000 - 40.000</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="card">
-                        <img src="../../assets/img/kekian-ayamudang.jpg" class="card-img-top" alt="Ayamudang">
+                        <img src="../../assets/img/kekian-ayamudang.jpg" class="card-img-top" alt="Product 3">
                         <div class="card-body">
                             <h5 class="card-title">AYAM UDANG</h5>
-                            <p class="card-text">Paduan gurih dimsum isian ayam dan segar udang, menghasilkan hidangan yang menggugah selera.</p>
-                            <a href="#" class="btn">Rp, 20.000</a>
+                            <p class="card-text">
+                                Olahan Ayam, udang, telur, tepung yang diberi isian keju leleh,
+                                lalu di balur dengan tepung roti dan di sajikan dengan digoreng.
+                            </p>
+                            <a href="#" class="btn btn-danger">Rp. 20.000 - 35.000</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="card">
-                        <img src="../../assets/img/lumpia-ayamudang.jpg" class="card-img-top" alt="Lumpia Ayamudang">
+                        <img src="../../assets/img/lumpia-ayamudang.jpg" class="card-img-top" alt="Product 4">
                         <div class="card-body">
                             <h5 class="card-title">LUMPIA AYAM UDANG</h5>
-                            <p class="card-text">Lumpia renyah dengan isi ayam dan udang, memberikan kenikmatan yang tak tertandingi dalam setiap gigitannya.</p>
-                            <a href="#" class="btn">Rp, 20.000</a>
+                            <p class="card-text">
+                                Olahan Ayam, udang, telur, tepung yang dibalut dengan kulit tahu dan disajikan dengan digoreng
+                            </p>
+                            <a href="#" class="btn btn-danger">Rp. 20.000 - 35.000</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="card">
-                        <img src="../../assets/img/menu6.jpg" class="card-img-top" alt="Kekian Ayamudang">
+                        <img src="../../assets/img/menu6.jpg" class="card-img-top" alt="Product 5">
                         <div class="card-body">
                             <h5 class="card-title">KEKIAN AYAM UDANG</h5>
-                            <p class="card-text">Kekian gurih yang diisi dengan ayam dan udang, menciptakan kombinasi rasa yang harmonis dan memuaskan.</p>
-                            <a href="#" class="btn">Rp, 20.000</a>
+                            <p class="card-text">
+                                Kekian ayam udang terbuat dari ayam, udang, telur, dan tepung terigu yang dihaluskan lalu dikukus.
+                            </p>
+                            <a href="#" class="btn btn-danger">Rp. 20.000 - 35.000</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                     <div class="card">
-                        <img src="../../assets/img/siomay-ayam.jpg" class="card-img-top" alt="Siomay Ayam">
+                        <img src="../../assets/img/siomay-ayam.jpg" class="card-img-top" alt="Product 6">
                         <div class="card-body">
-                            <h5 class="card-title">SIOMAY AYAM</h5>
-                            <p class="card-text">Siomay lembut dengan daging ayam, disajikan dengan saus gurih, menghadirkan cita rasa yang segar dan lezat.</p>
-                            <a href="#" class="btn">Rp, 20.000</a>
+                            <h5 class="card-title">SOMAY AYAM</h5>
+                            <p class="card-text">
+                                Olahan Ayam, udang, telur, tepung dan disajikan dengan di kukus dengan kulit siomay dan diberi wortel diatas nya
+                            </p>
+                            <a href="#" class="btn btn-danger">Rp. 20.000 - 35.000</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card">
-                        <img src="../../assets/img/wijen-ayamudang.jpe" class="card-img-top" alt="Wijen Ayamudang">
-                        <div class="card-body">
-                            <h5 class="card-title">WIJEN AYAM UDANG</h5>
-                            <p class="card-text">Kelezatan ayam dan udang dibalut wijen garing, menciptakan paduan cita rasa yang renyah dan menggugah selera.</p>
-                            <a href="#" class="btn">Rp, 20.000</a>
+                        <div class="card">
+                            <img src="../../assets/img/wijen-ayamudang.jpe" class="card-img-top" alt="Wijen Ayamudang">
+                            <div class="card-body">
+                                <h5 class="card-title">WIJEN AYAM UDANG</h5>
+                                <p class="card-text">Olahan ayam dan udang dibalut wijen garing, menciptakan paduan cita rasa yang renyah dan menggugah selera.</p>
+                                <a href="#" class="btn">Rp. 20.000 - 35.000</a>
+                            </div>
                         </div>
                     </div>
                 </div>

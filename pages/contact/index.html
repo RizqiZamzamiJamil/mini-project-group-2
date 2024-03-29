@@ -80,6 +80,7 @@
                                 Silahkan isi nama lengkap
                             </div>
                         </div>
+
                         <div class="mb-3" data-aos="fade-down" data-aos-delay="600">
                             <label for="whatsapp" class="form-label">Nomor WhatsApp</label>
                             <input type="text" class="form-control" id="whatsapp" placeholder="Masukkan Nomor WhatsApp Anda" required>
@@ -87,13 +88,20 @@
                                 Silahkan isi nomor WhatsApp
                             </div>
                         </div>
-                        <div class="mb-3" data-aos="fade-down" data-aos-delay="700">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Masukkan Email Anda" required>
-                            <div class="invalid-feedback">
-                                Silahkan isi email
+
+                        <div class="mb-3" data-aos="fade-down" data-aos-delay="600">
+                            <label for="jenis" class="form-label">Jenis Pesan</label>
+                            <select class="form-select" id="jenis" required>
+                                <option selected disabled value="">Pilih jenis pesan...</option>
+                                <option>Makanan</option>
+                                <option>Pelayanan</option>
+                                <option>Pertanyaan Lain</option>
+                            </select>
+                            <div id="validationServer04Feedback" class="invalid-feedback">
+                                Silahkan pilih jenis pesan
                             </div>
                         </div>
+
                         <div class="mb-3" data-aos="fade-down" data-aos-delay="800">
                             <label for="message" class="form-label">Pesan</label>
                             <textarea class="form-control" id="message" rows="3" placeholder="Tulis pesan Anda disini!" required=""></textarea>

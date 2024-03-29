@@ -163,6 +163,19 @@ body {
     border-radius: 20px;
 }
 
+/* Review */
+.review {
+    margin-top: 40px;
+}
+
+.border-nome {
+    border: 1px solid #ddd;
+}
+
+.img-center {
+    text-align: center;
+}
+
 
 /* Contact */
 .contact .btn {
@@ -258,4 +271,3 @@ body {
     }
 
 }
-

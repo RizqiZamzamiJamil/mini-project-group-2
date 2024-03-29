@@ -25,7 +25,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/style.css">
-    <script src="assets/script.js"></script>
 
     <title>Nyah Siok</title>
 </head>
@@ -46,20 +45,7 @@
                     <li class="nav-item"><a href="pages/product/index.html" class="nav-link">Product</a></li>
                     <li class="nav-item"><a href="pages/contact/index.html" class="nav-link">Contact</a></li>
                 </ul>
-
-                <div class="hamburger" onclick="openSidebar()">&#9776;</div>
             </header>
-        </div>
-    </div>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
-        <div class="mt-4">
-            <a href="" class="side-link active" aria-current="page">Home</a>
-            <a href="pages/about/index.html" class="side-link">About</a>
-            <a href="pages/product/index.html" class="side-link">Product</a>
-            <a href="pages/contact/index.html" class="side-link">Contact</a>
         </div>
     </div>
 
@@ -72,7 +58,7 @@
                     <img src="assets/img/logo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" data-aos="fade-down" data-aos-delay="100">Dimsum Nyah Siok</h1>
+                    <h1 class="fw-bold" data-aos="fade-down" data-aos-delay="100">Dimsum Nyah Siok</h1>
                     <p class="lead" data-aos="fade-down" data-aos-delay="200">
                         Tempatnya untuk menemukan kelezatan otentik dari <b>masakan rumahan</b> dan <b>aneka dimsum</b> yang memikat lidah.
                         Kami mempersembahkan pengalaman kuliner yang tak terlupakan, menggabungkan keahlian tradisional dengan sentuhan modern,
@@ -89,10 +75,10 @@
     <!-- Popular -->
     <section class="popular mb-5">
         <div class="container">
-            <h1 class="text-center my-4" data-aos="fade-down" data-aos-delay="400"><b>Produk Populer</b></h1>
+            <h1 class="text-center my-4" data-aos="fade-down" data-aos-delay="200"><b>Produk Populer</b></h1>
             <hr class="garis">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-                <div class="col" data-aos="fade-down" data-aos-delay="500">
+                <div class="col" data-aos="fade-down" data-aos-delay="300">
                     <div class="card">
                         <img src="assets/img/galantine-ayam.jpg" class="card-img-top" alt="Galantine Ayam">
                         <div class="card-body">
@@ -101,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col" data-aos="fade-down" data-aos-delay="600">
+                <div class="col" data-aos="fade-down" data-aos-delay="400">
                     <div class="card">
                         <img src="assets/img/lumpia-ayamudang.jpg" class="card-img-top" alt="Lumpia Udang">
                         <div class="card-body">
@@ -110,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col" data-aos="fade-down" data-aos-delay="700">
+                <div class="col" data-aos="fade-down" data-aos-delay="500">
                     <div class="card">
                         <img src="assets/img/siomay-ayam.jpg" class="card-img-top" alt="Siomay Ayam">
                         <div class="card-body">
@@ -119,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col" data-aos="fade-down" data-aos-delay="800">
+                <div class="col" data-aos="fade-down" data-aos-delay="600">
                     <div class="card">
                         <img src="assets/img/cakwe-ayamudang.jpg" class="card-img-top" alt="Cakwe Ayamudang">
                         <div class="card-body">
@@ -135,62 +121,64 @@
     <!-- Keunggulan -->
     <section class="keunggulan mb-5">
         <div class="container">
-            <h1 class="text-center my-4" data-aos="fade-down" data-aos-delay="400"><b>Kenapa Harus Kami?</b></h1>
+            <h1 class="text-center my-4" data-aos="fade-down" data-aos-delay="300"><b>Kenapa Harus Kami?</b></h1>
             <hr class="garis">
-            
+
             <div class="container px-4">
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div class="col-lg-6">
-                        <h2 class="fw-bold text-body-emphasis lh-1 mb-3" data-aos="fade-down" data-aos-delay="500">Resep Turun Temurun Berkualitas Tinggi</h2>
-                        <p class="lead" data-aos="fade-down" data-aos-delay="600">
-                            Kami menghadirkan cita rasa masakan Chinese yang autentik dengan menggunakan resep keluarga turun temurun.
-                            Setiap hidangan dimsum kami disiapkan dengan cinta dan dedikasi, memastikan bahwa setiap gigitan memberikan pengalaman
-                            yang autentik dan membuat pelanggan merindukan cita rasa rumah yang khas.
-                        </p>
-                    </div>
-                    <div class="col-10 col-sm-8 col-lg-6 mx-auto" data-aos="zoom-in-down" data-aos-delay="700">
-                        <img src="assets/img/turun-temurun.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                    </div>
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold" data-aos="fade-down" data-aos-delay="500">Resep Turun Temurun Berkualitas Tinggi</h2>
+                    <p class="lead" data-aos="fade-down" data-aos-delay="600">
+                        Kami menghadirkan cita rasa masakan Chinese yang autentik dengan menggunakan resep keluarga turun temurun.
+                        Setiap hidangan dimsum kami disiapkan dengan cinta dan dedikasi, memastikan bahwa setiap gigitan memberikan pengalaman
+                        yang autentik dan membuat pelanggan merindukan cita rasa rumah yang khas.
+                    </p>
                 </div>
-
-                <div class="row flex-lg align-items-center g-5 py-5">
-                    <div class="col-lg-6">
-                        <h2 class="fw-bold text-body-emphasis lh-1 mb-3" data-aos="fade-down" data-aos-delay="500">Varian Dimsum yang Beragam dan Khas</h2>
-                        <p class="lead" data-aos="fade-down" data-aos-delay="600">
-                            Dari Siomay hingga Galantine Ayam, kami menawarkan berbagai macam dimsum yang unik dan lezat.
-                            Setiap hidangan dipersiapkan dengan teliti menggunakan bahan-bahan berkualitas tinggi, seperti wijen,
-                            ayam, udang, dan keju, untuk memberikan variasi dan kelezatan yang tak tertandingi.
-                        </p>
-                    </div>
-                    <div class="col-10 col-sm-8 col-lg-6 mx-auto" data-aos="zoom-in-down" data-aos-delay="700">
-                        <img src="assets/img/aneka-dimsum.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div class="col-lg-6">
-                        <h2 class="fw-bold text-body-emphasis lh-1 mb-3" data-aos="fade-down" data-aos-delay="500">Bahan Yang Berkualitas</h2>
-                        <p class="lead" data-aos="fade-down" data-aos-delay="600">
-                            Kami hanya menggunakan bahan-bahan berkualitas tinggi untuk memastikan cita rasa yang luar biasa pada setiap sajian kami.
-                        </p>
-                    </div>
-                    <div class="col-10 col-sm-8 col-lg-6 mx-auto" data-aos="zoom-in-down" data-aos-delay="700">
-                        <img src="assets/img/bahan-berkualitas.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                    </div>
+                <div class="col-10 col-sm-8 col-lg-6 mx-auto" data-aos="zoom-in-down" data-aos-delay="800">
+                    <img src="assets/img/turun-temurun.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </div>
             </div>
+
+            <div class="row flex-lg align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold" data-aos="fade-down" data-aos-delay="500">Varian Dimsum yang Beragam dan Khas</h2>
+                    <p class="lead" data-aos="fade-down" data-aos-delay="600">
+                        Dari Siomay hingga Galantine Ayam, kami menawarkan berbagai macam dimsum yang unik dan lezat.
+                        Setiap hidangan dipersiapkan dengan teliti menggunakan bahan-bahan berkualitas tinggi, seperti wijen,
+                        ayam, udang, dan keju, untuk memberikan variasi dan kelezatan yang tak tertandingi.
+                    </p>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6 mx-auto" data-aos="zoom-in-down" data-aos-delay="800">
+                    <img src="assets/img/aneka-dimsum.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+            </div>
+
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold" data-aos="fade-down" data-aos-delay="500">Bahan Yang Berkualitas</h2>
+                    <p class="lead" data-aos="fade-down" data-aos-delay="600">
+                        Kami hanya menggunakan bahan-bahan berkualitas tinggi untuk memastikan cita rasa yang luar biasa pada setiap sajian kami.
+                    </p>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6 mx-auto" data-aos="zoom-in-down" data-aos-delay="800">
+                    <img src="assets/img/bahan-berkualitas.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+            </div>
+        </div>
+
         </div>
     </section>
 
     <!-- FAQs -->
-    <section class="faqs mb-5">
-        <h1 class="text-center my-4" data-aos="fade-down" data-aos-delay="400"><b>FAQs</b></h1>
+    <section class="faqs">
+        <h1 class="text-center my-4" data-aos="fade-down" data-aos-delay="500"><b>FAQs</b></h1>
         <hr class="garis">
         <br>
+
         <div class="container">
             <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item" data-aos="fade-down" data-aos-delay="600">
-                    <h2 class="accordion-header">
+                <div class="accordion-item" >
+                    <h2 class="accordion-header" data-aos="fade-down" data-aos-delay="600">
                         <button class="accordion-button collapsed  rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             Bagaimana cara memesan makanan?
                         </button>
@@ -212,7 +200,7 @@
                         </div>
                     </div>
                 </div>
-                    
+                
                 <div class="accordion-item" data-aos="fade-down" data-aos-delay="700">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed  rounded" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -224,7 +212,7 @@
                         <div class="accordion-body">
                             <p>Berikut Makanan yang tersedia :</p>
                             <ul>
-                                <li>Siomay,Wijen Ayamudang, Lunpia Ayamudang, Ayamudang Keju, Egg Ball, Cakwe Ayamudang,Galantine Ayam Kekian AyamUdang yang berkonsep Pre-Order</li>
+                                <li>Siomay,Wijen Ayamudang, Lunpia Ayamudang, Ayamudang Keju, Egg Ball, Cakwe Ayamudang, Galantine Ayam Kekian AyamUdang yang berkonsep Pre-Order</li>
                             </ul>
                         </div>
                     </div>
@@ -236,6 +224,7 @@
                             Berapa estimasi pengiriman makanan?
                         </button>
                     </h2>
+
                     <div id="flush-collapseTree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <p>Untuk estimasi pengiriman tergantung dengan jarak yang di tempuh <br>
@@ -251,13 +240,74 @@
                             Apakah bisa memesan dalam jumlah banyak?
                         </button>
                     </h2>
+
                     <div id="flush-collapseFor" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            <p>Untuk pemesanan dalam jumlah banyak bisa kami lakukan dengan estimasi pemesanan pembuatan 1-2 hari
-                                <br> dan bisa diantar ke tempat pemesan
-                            </p>
+                            <p>Untuk pemesanan dalam jumlah banyak bisa kami lakukan dengan estimasi pemesanan pembuatan 1-2 hari <br> dan bisa diantar ke tempat pemesan</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review -->
+    <section class="review mb-5">
+        <h1 class="text-center my-4" data-aos="fade-down" data-aos-delay="300"><b>Bagaimana Masakan Kami?</b></h1>
+        <hr class="garis">
+        <div class="container mx-auto">
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-sm-12 border-nome shadow rounded d-flex flex-column align-items-center m-2" data-aos="fade-down" data-aos-delay="300">
+                    <img src="assets/img/Influencer 1.jpg" alt="influencer 1" class="img-fluid rounded-circle mb-3 mt-3" width="150">
+                    <h4> David Nutron</h4>
+                    <p class=px-3>Manakanan dari dapur Nyah siok sangat enak
+                        tidak hanya enak di sini juga makananya terkenal
+                        dengan relatif murah murah
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-12 border-nome shadow rounded d-flex flex-column align-items-center m-2" data-aos="fade-down" data-aos-delay="400">
+                    <img src="assets/img/influencer 2.jpg" alt="influencer 2" class="rounded-circle mb-3 mt-3" width="150">
+                    <h4>Chyntia Dwi Ajeng</h4>
+                    <p class=px-3>Manakanan dari dapur Nyah siok sangat enak
+                        dan banyak sekali aneka makanan yang di sediakan
+                        makanan di sini pun harganya terjangkau
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-12border-nome shadow rounded d-flex flex-column align-items-center m-2" data-aos="fade-down" data-aos-delay="500">
+                    <img src="assets/img/influencer 3.jpg" alt="influencer 3" class="rounded-circle mb-3 mt-3" width="150">
+                    <h4>Rahayu Kurnia</h4>
+                    <p class=px-3>Manakanan dari dapur Nyah siok sangat enak
+                        dan di dapur nyak siok memiliki ciri khas rasa
+                        yang unik dan enak tentunya ramah di dompet
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-12 border-nome shadow rounded d-flex flex-column align-items-center m-2" data-aos="fade-down" data-aos-delay="300">
+                    <img src="assets/img/influencer 4.jpg" alt="influencer 1" class="img-fluid rounded-circle mb-3 mt-3" width="150">
+                    <h4>Purnomo</h4>
+                    <p class=px-3>Manakanan dari dapur Nyah siok sangat enak
+                        tidak hanya enak di sini juga makananya terkenal
+                        dengan relatif murah murah
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-12 border-nome shadow rounded d-flex flex-column align-items-center m-2" data-aos="fade-down" data-aos-delay="400">
+                    <img src="assets/img/influencer 5.jpg" alt="influencer 2" class="rounded-circle mb-3 mt-3" width="150">
+                    <h4>Sari Nur Amanah</h4>
+                    <p class=px-3>Manakanan dari dapur Nyah siok sangat enak dan banyak sekali aneka makanan yang di sediakan
+                        makanan di sini pun harganya terjangkau
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-12border-nome shadow rounded d-flex flex-column align-items-center m-2" data-aos="fade-down" data-aos-delay="500">
+                    <img src="assets/img/influencer 6.jpg" alt="influencer 3" class="rounded-circle mb-3 mt-3" width="150">
+                    <h4>Ari Puji</h4>
+                    <p class=px-3>Manakanan dari dapur Nyah siok sangat enak <br>
+                        dan di dapur nyak siok memiliki ciri khas rasa <br>
+                        yang unik dan enak tentunya ramah di dompet
+                    </p>
                 </div>
             </div>
         </div>
@@ -280,8 +330,8 @@
         </footer>
     </div>
 
-    <script>
-        AOS.init();
-    </script>
-</body>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
