@@ -236,3 +236,16 @@ body {
     }
 }
 
+/* Review */
+.review {
+            padding: 50px 0;
+            margin: 20px;
+        }
+
+        .border-nome {
+            border: 1px solid #ddd;
+        }
+
+        .img-center {
+            text-align: center;
+        }
