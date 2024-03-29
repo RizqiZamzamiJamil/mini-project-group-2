@@ -22,9 +22,13 @@
 
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="assets/img/logo.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/style.css">
+
+    <!-- JS -->
+    <script src="assets/script.js"></script>
 
     <title>Nyah Siok</title>
 </head>
@@ -45,7 +49,20 @@
                     <li class="nav-item"><a href="pages/product/index.html" class="nav-link">Product</a></li>
                     <li class="nav-item"><a href="pages/contact/index.html" class="nav-link">Contact</a></li>
                 </ul>
+
+                <div class="hamburger" onclick="openSidebar()">&#9776;</div>
             </header>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <div class="mt-4">
+            <a href="" class="side-link active" aria-current="page">Home</a>
+            <a href="pages/about/index.html" class="side-link">About</a>
+            <a href="pages/product/index.html" class="side-link">Product</a>
+            <a href="pages/contact/index.html" class="side-link">Contact</a>
         </div>
     </div>
 
@@ -55,7 +72,7 @@
         <div class="container px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6 mx-auto" data-aos="zoom-in-down" data-aos-delay="300">
-                    <img src="assets/img/logo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    <img src="assets/img/logo.jpg" class="d-block mx-lg-auto img-fluid" alt="Logo" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
                     <h1 class="fw-bold" data-aos="fade-down" data-aos-delay="100">Dimsum Nyah Siok</h1>

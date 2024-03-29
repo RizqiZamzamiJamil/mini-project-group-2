@@ -176,16 +176,29 @@ body {
     text-align: center;
 }
 
-
-/* Contact */
-.contact .btn {
-    background-color: var(--primary);
-    color: white;
+/* About */
+#about-logo {
+    max-height: 400px;
 }
 
 /* Product */
 .product img {
     height: 360px;
+}
+
+.product .card {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.product .card:hover {
+    transform: scale(1.03);
+}
+
+/* Contact */
+.contact .btn {
+    background-color: var(--primary);
+    color: white;
 }
 
 .product .btn {
