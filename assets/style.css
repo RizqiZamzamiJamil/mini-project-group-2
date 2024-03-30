@@ -82,6 +82,47 @@ body {
 /* Home */
 /* Hero */
 
+.hero {
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/aneka-dimsum.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+}
+
+#h-kiri {
+    z-index: 1;
+}
+
+#h-kanan {
+    position: relative;
+    z-index: 1;
+}
+
+#h-kanan::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    right: -40%;
+    width: 950px;
+    height: 1000px;
+    background-color: white;
+    transform: skew(-20deg);
+    z-index: -1;
+}
+
 .hero .btn {
     background-color: var(--primary);
     border: 2px solid var(--primary);
@@ -231,12 +272,24 @@ body {
 
 /* Responsif */
 @media (max-width: 1399px) {
+    #h-kanan::after {
+        right: -42%;
+        width: 850px;
+        height: 900px;
+    }
+
     .popular .card img {
         height: 190px;
     }
 }
 
 @media (max-width: 1199px) {
+    #h-kanan::after {
+        right: -65%;
+        width: 850px;
+        height: 900px;
+    }
+
     .popular .card img {
         height: 150px;
     }
@@ -248,12 +301,20 @@ body {
 }
 
 @media (max-width: 991px) {
+    #h-kanan::after {
+        display: none;
+    }
+
     .product img {
         height: 240px;
     }
 }
 
 @media (max-width: 767px) {
+    #h-kanan::after {
+        display: none;
+    }
+    
     #navbar .nav-link {
         display: none;
     }
@@ -274,6 +335,9 @@ body {
 
 
 @media (max-width: 576px) {
+    #h-kanan::after {
+        display: none;
+    }
 
     .hero .btn {
         width: 100%;
