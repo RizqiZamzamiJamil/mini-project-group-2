@@ -301,6 +301,10 @@ body {
 }
 
 @media (max-width: 991px) {
+    .hero::before {
+        left: 0px;
+    }
+
     #h-kanan::after {
         display: none;
     }
