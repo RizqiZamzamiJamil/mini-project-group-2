@@ -1,8 +1,9 @@
-function openSidebar() {
-    document.querySelector('.sidebar').style.width = '250px';
-}
+$(document).ready(function() {
+    window.openSidebar = function() {
+        $('.sidebar').css('width', '250px');
+    }
 
-function closeSidebar() {
-    document.querySelector('.sidebar').style.width = '0';
-}
-
+    window.closeSidebar = function() {
+        $('.sidebar').css('width', '0');
+    }
+});
