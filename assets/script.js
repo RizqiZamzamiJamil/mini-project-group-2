@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    window.openSidebar = function() {
-        $('.sidebar').css('width', '250px');
+    window.openSidebar = function () {
+        $(".sidebar").addClass("active");
     }
 
-    window.closeSidebar = function() {
-        $('.sidebar').css('width', '0');
+    window.closeSidebar = function () {
+        $(".sidebar").removeClass("active");
     }
 
     $('#KirimPesanan').click(function () {
@@ -35,16 +35,4 @@ $(document).ready(function() {
 
         window.open(url, "_blank");
     }
-
-    // document.querySelector('form').addEventListener('submit', function(event) {
-    //     event.preventDefault();
-
-    //     var inputs = this.querySelectorAll('input, textarea');
-    //     var allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
-
-    //     if (allFilled) {
-    //         var modal = new bootstrap.Modal(document.getElementById('kirimm'));
-    //         modal.show();
-    //     }
-    // });
 });
