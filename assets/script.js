@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(document).ready(function () {
+    // Sidebar
     window.openSidebar = function () {
         $(".sidebar").addClass("active");
     }
@@ -7,6 +8,38 @@ $(document).ready(function() {
         $(".sidebar").removeClass("active");
     }
 
+    // Product
+    $('.card.produk').click(function() {
+        var gambarProduk = $(this).find('.card-img-top.produk').attr('src');
+        var namaProduk = $(this).find('.card-title.produk').text();
+        var deskripsiProduk = $(this).find('.card-text.produk').text();
+
+        $('#gambarProduk').attr('src', gambarProduk);
+        $('#namaProduk').text(namaProduk);
+        $('#deskripsiProduk').text(deskripsiProduk);
+
+        var priceRange = $(this).find('.btn').text().split(' - ');
+        var price6 = parseInt(priceRange[0].replace('Rp. ', '').replace('.', '').trim());
+        var price12 = parseInt(priceRange[1].replace('Rp. ', '').replace('.', '').trim());
+
+        $('#hargaProduk').text('Rp. ' + price6);
+
+        $('.variantBtn').removeClass('active');
+        $('.variantBtn[data-variant="6"]').addClass('active');
+
+        $('.variantBtn').click(function() {
+            var variant = $(this).data('variant');
+            var price = (variant == 6) ? price6 : price12;
+            $('#hargaProduk').text('Rp. ' + price);
+
+            $('.variantBtn').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $('#productModal').modal('show');
+    });
+
+    // Contact
     $('#KirimPesanan').click(function () {
         if ($('#name').val().trim() === '' || $('#message').val().trim() === '' || $('#whatsapp').val().trim() === '' || $('#jenis').val().trim() === '') {
             swal('', 'Mohon lengkapi semua form', 'warning');
