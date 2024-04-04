@@ -8,6 +8,16 @@ $(document).ready(function () {
         $(".sidebar").removeClass("active");
     }
 
+    // Populer
+    $(".populer-item").hover(
+        function() {
+            $(this).find(".populer-desk").slideDown();
+        },
+        function() {
+            $(this).find(".populer-desk").slideUp();
+        }
+    );
+
     // Product
     $('.card.produk').click(function() {
         var gambarProduk = $(this).find('.card-img-top.produk').attr('src');
