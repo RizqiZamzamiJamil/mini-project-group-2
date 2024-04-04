@@ -71,11 +71,15 @@ $(document).ready(function () {
         if (name.trim() === '' || message.trim() === '' || phoneNumber.trim() === '' || jenis.trim() === '') {
             swal('', 'Mohon lengkapi semua form', 'warning');
             return false;
+        } else {
+            $("#kirimm").modal("show");
+
+            $("#kirim").click(function() {
+                const messageBody = `Assalamualaikum\n\nNama : ${name}\nJenis Pesanan: ${jenis}\n\n${message}`;
+                const url = `https://api.whatsapp.com/send?phone=6281228900185&text=${encodeURIComponent(messageBody)}`;
+
+                window.open(url, "_blank");
+            });
         }
-
-        const messageBody = `Assalamualaikum\n\nNama : ${name}\nJenis Pesanan: ${jenis}\n\n${message}`;
-        const url = `https://api.whatsapp.com/send?phone=6281228900185&text=${encodeURIComponent(messageBody)}`;
-
-        window.open(url, "_blank");
     }
 });

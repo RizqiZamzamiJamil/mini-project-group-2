@@ -289,12 +289,14 @@ body {
     background-color: var(--primary);
     border: 1px solid var(--primary);
     color: white;
+    transition: transform 0.3s ease;
 }
 
 .product .modal .btn.pesan:hover {
     background-color: white;
     border: 1px solid var(--primary);
     color: var(--primary);
+    transform: scale(1.1);
 }
 
 
@@ -302,7 +304,16 @@ body {
 /* Contact */
 .contact .btn {
     background-color: var(--primary);
+    border: 1px solid var(--primary);
     color: white;
+    transition: transform 0.3s ease;
+}
+
+.contact .btn:hover {
+    background-color: white;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    transform: scale(1.1);
 }
 
 .product .btn {
