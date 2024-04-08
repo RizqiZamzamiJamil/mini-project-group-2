@@ -56,6 +56,10 @@ body {
     padding-top: 60px;
 }
 
+.sidebar.active {
+    width: 250px;
+}
+
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -161,6 +165,10 @@ body {
     color: white;
 }
 
+.populer-desk {
+    display: none;
+}
+
 .garis {
     border: 1px solid var(--primary);
     width: 150px;
@@ -217,29 +225,95 @@ body {
     text-align: center;
 }
 
+
+/* ---------- Halaman Lain ---------- */
 /* About */
 #about-logo {
     max-height: 400px;
 }
 
 /* Product */
-.product img {
+.product .card img {
     height: 360px;
 }
 
 .product .card {
+    position: relative;
     transition: transform 0.2s ease;
     cursor: pointer;
 }
 
 .product .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.04);
 }
+
+.product .card:hover .card-img-top {
+    filter: brightness(50%);
+}
+
+.product .card-img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product .card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.product .modal .btn {
+    background-color: white;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.product .modal .btn:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+}
+
+.product .modal .btn.active {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+}
+
+.product .modal .btn.pesan {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.product .modal .btn.pesan:hover {
+    background-color: white;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+
 
 /* Contact */
 .contact .btn {
     background-color: var(--primary);
+    border: 1px solid var(--primary);
     color: white;
+    transition: transform 0.3s ease;
+}
+
+.contact .btn:hover {
+    background-color: white;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    transform: scale(1.1);
 }
 
 .product .btn {
@@ -294,7 +368,7 @@ body {
         height: 150px;
     }
 
-    .product img {
+    .product .card img {
         height: 330px;
     }
 
@@ -309,18 +383,22 @@ body {
         display: none;
     }
 
-    .product img {
+    .product .card img {
         height: 240px;
     }
 }
 
 @media (max-width: 767px) {
+    #navbar .nav-link {
+        display: none;
+    }
+
     #h-kanan::after {
         display: none;
     }
-    
-    #navbar .nav-link {
-        display: none;
+
+    .hero p {
+        font-size: 18px;
     }
 
     .hamburger {
@@ -332,7 +410,7 @@ body {
         width: 100%;
     }
 
-    .product img {
+    .product .card img {
         height: 100%;
     }
 }
@@ -341,6 +419,10 @@ body {
 @media (max-width: 576px) {
     #h-kanan::after {
         display: none;
+    }
+
+    .hero p {
+        font-size: 17px;
     }
 
     .hero .btn {
